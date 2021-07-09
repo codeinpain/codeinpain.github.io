@@ -1,0 +1,70 @@
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gudea';
+    color: white;
+    background-color: $bg1;
+    font-weight 400
+}
+
+.container {
+    max-width 750px
+    margin 0 auto
+    padding 0 20px
+    clear both
+}
+
+.container.overflow-hidden {
+    overflow hidden
+}
+
+a {
+    text-decoration none
+    color white
+    font-weight 700
+}
+
+a.texto {
+    text-decoration underline
+}
+
+::-moz-selection { background: #fff; color: #000; }
+::selection { background: #fff; color: #000; }
+
+img {
+    max-width 100%
+}
+
+hr {
+    margin-top remify(50px)
+    color: white
+    background white
+    width remify(100px)
+}
+
+/* Works on Firefox */
+* {
+  scrollbar-width: large;
+  scrollbar-color: black white;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: white;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 0px;
+  border: 0px solid white;
+}
+
+
